@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    static: path.resolve(__dirname, 'dist'),
+    static: path.resolve(__dirname, 'public'),
     open: true,
     port: 9099,
     client: {
@@ -17,18 +17,4 @@ module.exports = merge(common, {
     },
     compress: true,
   },
-  module: [
-    {
-      test: /\.(png|jpg|gif|svg)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'images/',
-          },
-        },
-      ],
-    },
-  ],
 });
