@@ -6,7 +6,7 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "serve": "http-server serve ./dist -p 9090"
+    "serve": "http-server dist"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
