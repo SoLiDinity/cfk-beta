@@ -7,7 +7,7 @@
 [data-theme="dark"] {
   --main: #1f1f1f;
   --main-75: #1f1f1fb8;
-  --secondary: black;
+  --secondary: white;
 }
 
 * {
