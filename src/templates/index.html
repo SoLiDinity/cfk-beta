@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/f2ead6d816.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/icon.png">
+    <script
+      src="https://kit.fontawesome.com/f2ead6d816.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Clicks For Kicks</title>
   </head>
-  <body data-theme = ''>
-    <button class="theme-button" id="themeButton"><i class="fa-solid fa-moon" id="nightDayIcon"></i></button>
+  <body data-theme="">
+    <button class="theme-button" id="themeButton">
+      <i class="fa-solid fa-moon" id="nightDayIcon"></i>
+    </button>
     <header>
       <div class="app-bar">
         <div class="headings">
-          <div id="logo"><h3>iniLogo</h3></div>
+          <div class="logo">
+            <img src="images/CFK_LOGO.png" alt="" />
+          </div>
           <button id="hamburger">☰</button>
         </div>
         <nav id="drawer">
           <ul class="nav_list">
             <li class="nav_list_item"><a href="#">Home</a></li>
-            <li class="nav_list_item"><a href="#">Tentang</a></li>
+            <li class="nav_list_item"><a href="#aboutSection">Tentang</a></li>
             <li class="nav_list_item"><a href="#serviceSection">Layanan</a></li>
             <li class="nav_list_item"><a href="#orderSection">Pesanan</a></li>
           </ul>
@@ -29,13 +37,13 @@
       <section id="mainSection">
         <article>
           <h1>
-            Tampil Lebih <span>Baik</span>, Sepatu Lebih <span>Bersih</span>,
-            Hanya dengan Satu <span>Klik!</span>
+            Tampil Lebih <span>Baik</span>, Sepatu Lebih <span>Bersih!</span>
           </h1>
           <p>
-            Bersama <strong style="color: blueviolet;">Clicks For Kicks</strong> rasakan transformasi instan pada penampilan Anda!
+            Bersama <strong>Clicks For Kicks</strong> rasakan transformasi
+            instan pada penampilan Anda!
           </p>
-          <a href="#" class="learn-more-btn">Selanjutnya</a>
+          <a href="#aboutSection" class="learn-more-btn">Selanjutnya</a>
         </article>
         <img
           src="images/young man online shopping for sneakers on his smartphone.png"
@@ -43,15 +51,58 @@
         />
       </section>
 
+      <section id="aboutSection">
+        <img
+          src="images/young people in the aprons with gadgets.png"
+          alt=""
+        />
+        <article>
+          <h1>Tentang Kami</h1>
+          <p>
+            Bersama <strong>Clicks For Kicks</strong> rasakan transformasi
+            instan pada penampilan Anda!
+          </p>
+        </article>
+      </section>
+
       <section id="serviceSection">
         <h1>Layanan</h1>
         <div class="services-card-container">
+          <div class="services-card">
+            <h3 class="tier">On The Spot</h3>
+            <ul>
+              <li><i class="fa-solid fa-check"></i>Pencucian cepat</li>
+              <li>
+                <i class="fa-solid fa-check"></i>Proses pencucian langsung
+                ditempat
+              </li>
+            </ul>
+            <h3 class="pricing"><span>IDR</span> 20.000,-</h3>
+          </div>
+
+          <div class="services-card popular">
+            <h5>Popular</h5>
+            <h3 class="tier">Deep Cleaning</h3>
+            <ul>
+              <li><i class="fa-solid fa-check"></i>Pencucian lebih bersih</li>
+              <li>
+                <i class="fa-solid fa-check"></i>Proses pencucian mendalam
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>Memberikan kenyamanan ekstra
+              </li>
+            </ul>
+            <h3 class="pricing"><span>IDR</span> 40.000,-</h3>
+          </div>
 
           <div class="services-card">
             <h3 class="tier">Basic</h3>
             <ul>
               <li><i class="fa-solid fa-check"></i>Pencucian cepat</li>
-              <li><i class="fa-solid fa-check"></i>Proses pencucian langsung ditempat</li>
+              <li>
+                <i class="fa-solid fa-check"></i>Proses pencucian langsung
+                ditempat
+              </li>
             </ul>
             <h3 class="pricing"><span>IDR</span> 20.000,-</h3>
           </div>
@@ -60,7 +111,10 @@
             <h3 class="tier">Basic</h3>
             <ul>
               <li><i class="fa-solid fa-check"></i>Pencucian cepat</li>
-              <li><i class="fa-solid fa-check"></i>Proses pencucian langsung ditempat</li>
+              <li>
+                <i class="fa-solid fa-check"></i>Proses pencucian langsung
+                ditempat
+              </li>
             </ul>
             <h3 class="pricing"><span>IDR</span> 20.000,-</h3>
           </div>
@@ -69,7 +123,10 @@
             <h3 class="tier">Basic</h3>
             <ul>
               <li><i class="fa-solid fa-check"></i>Pencucian cepat</li>
-              <li><i class="fa-solid fa-check"></i>Proses pencucian langsung ditempat</li>
+              <li>
+                <i class="fa-solid fa-check"></i>Proses pencucian langsung
+                ditempat
+              </li>
             </ul>
             <h3 class="pricing"><span>IDR</span> 20.000,-</h3>
           </div>
@@ -78,29 +135,13 @@
             <h3 class="tier">Basic</h3>
             <ul>
               <li><i class="fa-solid fa-check"></i>Pencucian cepat</li>
-              <li><i class="fa-solid fa-check"></i>Proses pencucian langsung ditempat</li>
+              <li>
+                <i class="fa-solid fa-check"></i>Proses pencucian langsung
+                ditempat
+              </li>
             </ul>
             <h3 class="pricing"><span>IDR</span> 20.000,-</h3>
           </div>
-
-          <div class="services-card">
-            <h3 class="tier">Basic</h3>
-            <ul>
-              <li><i class="fa-solid fa-check"></i>Pencucian cepat</li>
-              <li><i class="fa-solid fa-check"></i>Proses pencucian langsung ditempat</li>
-            </ul>
-            <h3 class="pricing"><span>IDR</span> 20.000,-</h3>
-          </div>
-
-          <div class="services-card">
-            <h3 class="tier">Basic</h3>
-            <ul>
-              <li><i class="fa-solid fa-check"></i>Pencucian cepat</li>
-              <li><i class="fa-solid fa-check"></i>Proses pencucian langsung ditempat</li>
-            </ul>
-            <h3 class="pricing"><span>IDR</span> 20.000,-</h3>
-          </div>
-
         </div>
       </section>
 
@@ -108,13 +149,21 @@
         <h1>Pantau Pesanan Anda</h1>
         <div class="search-input">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Cari ID pesanan anda..." maxlength="6" id="search">
+          <input
+            type="text"
+            placeholder="Cari ID pesanan anda..."
+            maxlength="6"
+            id="search"
+          />
         </div>
         <div class="data-list-container" id="dataListContainer">
           <div class="search-empty-state" id="searchEmptyState">
-            <img src="images/pink sneakers floating.png" alt="">
+            <img src="images/pink sneakers floating.png" alt="" />
             <h1>Tidak menemukan pesanan?</h1>
-            <p>Apabila anda tidak menemukan pesanan anda, harap laporkan kepada kasir terdekat!</p>
+            <p>
+              Apabila anda tidak menemukan pesanan anda, harap laporkan kepada
+              kasir terdekat!
+            </p>
           </div>
         </div>
       </section>

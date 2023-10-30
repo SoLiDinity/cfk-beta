@@ -36,7 +36,6 @@ window.addEventListener('load', (event) => {
 
         const orderStatus = document.querySelector('.order-progress');
         const paymentStatus = document.querySelector('.payment-status');
-        console.log(data.status);
         if (data.status == 'done') {
           orderStatus.style.backgroundColor = '#37cd2a';
         } else {
