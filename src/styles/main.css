@@ -247,13 +247,16 @@ main section {
 .about-container article p {
   padding: 1rem;
   border-radius: 10px;
-  color: var(--secondary);
+  background-color: var(--accent-color);
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
   font-size: clamp(14px, 1.15vw, 800px);
   text-align: justify;
+  margin-bottom: 1rem;
 }
 
+.about-container article p,
 .about-container article p strong {
-  color: var(--secondary);
+  color: white;
 }
 
 .about-container article ul {
@@ -266,15 +269,16 @@ main section {
 .about-container article ul li {
   width: 100%;
   padding: 0.5rem 1rem;
-  border-radius: 50px;
+  border-radius: 10px;
   color: var(--secondary);
   font-weight: bold;
-  background-color: var(--accent-color);
-  color: white;
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: var(--accent-color);
+  color: white;
 }
 
 /*Services Section*/
@@ -319,12 +323,27 @@ main section {
   border-radius: 50px;
 }
 
+.services-card.limited {
+  border: 2px solid rgb(43, 199, 207);
+  background-color: rgba(0, 255, 221, 0.075);
+}
+
+.services-card.limited h5 {
+  background-color: rgb(43, 199, 207);
+  color: white;
+  padding: 0.5rem 0.75rem;
+  margin-top: -2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50px;
+}
+
 .services-card .tier {
   font-size: 24px;
   text-align: center;
 }
 
 .services-card ul {
+  width: 100%;
   min-height: 120px;
   margin-top: 0.5rem;
   list-style: none;
@@ -349,6 +368,10 @@ main section {
 
 .services-card.popular .pricing {
   background-color: rgb(255, 54, 121);
+}
+
+.services-card.limited .pricing {
+  background-color: rgb(43, 199, 207);
 }
 
 .services-card .pricing span {
