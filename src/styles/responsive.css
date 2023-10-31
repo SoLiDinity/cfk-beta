@@ -100,6 +100,11 @@
     max-width: 275px;
   }
 
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   #mainSection article {
     width: 100%;
     justify-content: center;
@@ -111,29 +116,16 @@
     text-align: center;
   }
 
-  #aboutSection {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #aboutSection h1{
-    text-align: center;
-  }
-
-  #aboutSection img{
+  .about-container img{
     padding: 1rem;
   }
 
-  #aboutSection article{
-    margin-bottom: 1rem;
+  .about-container article ul{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 
-  #aboutSection article p {
-    text-align: justify;
-    font-size: 16px;
-  }
-
-  #aboutSection article ul li {
+  .about-container article ul li {
     font-size: 14px;
   }
 }
