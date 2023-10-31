@@ -18,6 +18,11 @@
     overflow-x: hidden;
   }
 
+  .whatsapp-button {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+
   main {
     padding: 1rem;
     padding-top: 80px;
@@ -36,9 +41,8 @@
     justify-content: space-between;
   }
 
-  .logo{
-
-    padding: .25rem .5rem;
+  .logo {
+    padding: 0.25rem 0.5rem;
   }
 
   #drawer {
@@ -95,14 +99,10 @@
     margin-top: 1.5rem;
   }
 
-  #mainSection img, #aboutSection img {
+  #mainSection img,
+  #aboutSection img {
     width: 75%;
     max-width: 275px;
-  }
-
-  .about-container {
-    display: flex;
-    flex-direction: column;
   }
 
   #mainSection article {
@@ -116,11 +116,16 @@
     text-align: center;
   }
 
-  .about-container img{
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-container img {
     padding: 1rem;
   }
 
-  .about-container article ul{
+  .about-container article ul {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -141,10 +146,9 @@
 @media (max-width: 374px) {
   .services-card .pricing {
     font-size: 18px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 }
 
 @media (max-width: 319px) {
 }
-

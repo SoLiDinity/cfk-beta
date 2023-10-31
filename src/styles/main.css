@@ -1,4 +1,5 @@
-:root, [data-theme="light"]{
+:root,
+[data-theme='light'] {
   --main: white;
   --main-75: rgba(255, 255, 255, 0.75);
   --secondary: #1f1f1f;
@@ -6,7 +7,7 @@
   --border-color: rgb(173, 210, 216, 0.25);
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   --main: #1f1f1f;
   --main-75: #1f1f1fb8;
   --secondary: white;
@@ -21,19 +22,19 @@
   text-decoration: none;
 }
 
-html {  
+html {
   scroll-behavior: smooth;
   background-color: var(--main);
   transition: 0.3s;
 }
 
-body{
-    min-height: 125vh;
-    background-color: var(--main);
-    transition: 0.3s;
+body {
+  min-height: 125vh;
+  background-color: var(--main);
+  transition: 0.3s;
 }
 
-.theme-button{
+.theme-button {
   width: 50px;
   padding: 1.5rem;
   position: fixed;
@@ -51,18 +52,37 @@ body{
   border-radius: 5px 0 0 5px;
 }
 
-.theme-button i{
+.theme-button i {
   color: var(--main);
   font-size: 24px;
   margin-right: 5px;
+}
+
+.whatsapp-button {
+  font-size: clamp(30px, 2.5vw, 800px);
+  background-color: #2ad04a;
+  position: fixed;
+  z-index: 200;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.whatsapp-button i {
+  color: white;
 }
 
 a,
 button,
 input,
 textarea {
-    min-width: 44px;
-    min-height: 44px;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 header {
@@ -72,39 +92,35 @@ header {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem;
-    padding-top: 7.5rem;
-    gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  padding-top: 7.5rem;
+  gap: 2.5rem;
 }
 
 main section {
-    width: 90%;
-    padding: 1rem 2rem;
-    border-radius: 20px;
-    border: 2px solid var(--border-color);
-    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
-    scroll-margin: 6.5rem;
+  width: 90%;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 2px solid var(--border-color);
+  box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
+  scroll-margin: 6.5rem;
 }
-
-
-
-
 
 /*App Bar*/
 
-.app-bar{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2.5rem;
-    background-color: var(--main-75);
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+.app-bar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  background-color: var(--main-75);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .headings {
@@ -115,12 +131,12 @@ main section {
 .logo {
   width: 20%;
   min-width: 150px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   background-color: var(--accent-color);
 }
 
-.logo img{
+.logo img {
   width: 100%;
 }
 
@@ -149,40 +165,38 @@ main section {
   display: none;
 }
 
-
-
-
-
 /*Main Section*/
 
 #mainSection {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(45deg, rgb(82, 29, 132), blueviolet);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgb(82, 29, 132), blueviolet);
 }
 
-#mainSection img{
-    width: 100%;
+#mainSection img {
+  width: 100%;
 }
 
-#mainSection article{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+#mainSection article {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
-#mainSection article h1, #mainSection h1 span{
+#mainSection article h1,
+#mainSection h1 span {
   color: white;
-    font-size: clamp(24px, 3vw, 800px);
+  font-size: clamp(24px, 3vw, 800px);
 }
 
-#mainSection article p, #mainSection p strong{
-    color: white;
-    font-size: clamp(14px, 1.5vw, 800px);
-    text-align: justify;
-    margin-top: 1rem;
+#mainSection article p,
+#mainSection p strong {
+  color: white;
+  font-size: clamp(14px, 1.5vw, 800px);
+  text-align: justify;
+  margin-top: 1rem;
 }
 
 .learn-more-btn {
@@ -197,7 +211,7 @@ main section {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: bold;
-  padding: .75rem 2rem;
+  padding: 0.75rem 2rem;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -207,20 +221,16 @@ main section {
   color: white;
 }
 
-
-
-
-
 /*About Section*/
 
-#aboutSection h1{
+#aboutSection h1 {
   color: var(--secondary);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 24px;
   text-align: center;
 }
 
-.about-container{
+.about-container {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -228,36 +238,34 @@ main section {
   justify-content: center;
 }
 
-.about-container img{
+.about-container img {
   width: 80%;
   min-width: 00px;
   padding: 1rem 1vw;
 }
 
-.about-container article p{
+.about-container article p {
   padding: 1rem;
   border-radius: 10px;
-  background-color: var(--accent-color);
-  color: white;
-  font-size: clamp(14px, 1vw, 800px);
+  color: var(--secondary);
+  font-size: clamp(14px, 1.15vw, 800px);
   text-align: justify;
 }
 
-.about-container article p strong{
-  color: white;
+.about-container article p strong {
+  color: var(--secondary);
 }
 
-.about-container article ul{
-  margin-top: 1.5rem;
+.about-container article ul {
+  margin-top: 1rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 
-.about-container article ul li{
+.about-container article ul li {
   width: 100%;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   color: var(--secondary);
   font-weight: bold;
@@ -268,10 +276,6 @@ main section {
   align-items: center;
   text-align: center;
 }
-
-
-
-
 
 /*Services Section*/
 
@@ -309,9 +313,9 @@ main section {
 .services-card.popular h5 {
   background-color: rgb(255, 54, 121);
   color: white;
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
   margin-top: -2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   border-radius: 50px;
 }
 
@@ -322,28 +326,28 @@ main section {
 
 .services-card ul {
   min-height: 120px;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   list-style: none;
 }
 
-.services-card ul li{
+.services-card ul li {
   display: flex;
 }
 
-.services-card ul li i{
+.services-card ul li i {
   color: rgb(22, 208, 22);
 }
 
 .services-card .pricing {
   margin-top: 1.5rem;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 22px;
   color: white;
   background-color: var(--accent-color);
   border-radius: 50px;
 }
 
-.services-card.popular .pricing{
+.services-card.popular .pricing {
   background-color: rgb(255, 54, 121);
 }
 
@@ -355,20 +359,16 @@ main section {
 }
 
 .services-card li .fa-check {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
-.data-list-card{
+.data-list-card {
   margin-top: 1rem;
   padding: 1rem 0;
   width: 100%;
   border: 2px solid var(--border-color);
   border-radius: 10px;
 }
-
-
-
-
 
 /*Orders Section*/
 
@@ -379,11 +379,11 @@ main section {
   align-items: center;
 }
 
-#orderSection h1{
+#orderSection h1 {
   text-align: center;
 }
 
-#orderSection .search-input{
+#orderSection .search-input {
   width: 100%;
   margin-top: 2rem;
   padding: 0 1rem;
@@ -407,7 +407,7 @@ main section {
   color: var(--accent-color);
 }
 
-.search-input input{
+.search-input input {
   width: 100%;
   border-radius: 5px;
   border: none;
@@ -416,7 +416,7 @@ main section {
   color: black;
 }
 
-.data-list-container{
+.data-list-container {
   width: 100%;
   min-height: 300px;
   display: flex;
@@ -425,17 +425,17 @@ main section {
   align-items: center;
 }
 
-.data-list-card{
+.data-list-card {
   width: 100%;
   box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.15);
 }
 
-.data-list-card h3{
+.data-list-card h3 {
   border-bottom: 2px solid var(--border-color);
   padding: 0 1rem 1rem;
 }
 
-.data-list-card .order-detail{
+.data-list-card .order-detail {
   margin: 1rem;
 }
 
@@ -443,31 +443,32 @@ main section {
   width: 100%;
 }
 
-.order-detail tbody{
+.order-detail tbody {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-.order-detail tr{
+.order-detail tr {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr .25fr 5fr;
-  gap: .5rem;
+  grid-template-columns: 1fr 0.25fr 5fr;
+  gap: 0.5rem;
 }
 
-.order-detail td{
+.order-detail td {
   display: flex;
   align-items: baseline;
 }
 
-.order-progress, .payment-status{
+.order-progress,
+.payment-status {
   background-color: lightgray;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-right: .35rem;
+  margin-right: 0.35rem;
 }
 
 .search-empty-state {
@@ -478,34 +479,32 @@ main section {
   margin-top: 2rem;
 }
 
-.search-empty-state img{
+.search-empty-state img {
   width: 15%;
   min-width: 150px;
 }
 
-.search-empty-state h1, .search-empty-state p {
+.search-empty-state h1,
+.search-empty-state p {
   text-align: center;
 }
 
-.search-empty-state h1{
+.search-empty-state h1 {
   margin-top: 1rem;
   color: var(--accent-color);
 }
 
-.search-empty-state p{
-  margin: .5rem 0;
+.search-empty-state p {
+  margin: 0.5rem 0;
 }
 
-.search-empty-state.hide{
+.search-empty-state.hide {
   display: none;
 }
 
-
-
-
 /*Footer*/
 
-footer{
+footer {
   width: 100%;
   min-height: 10rem;
   background-color: #151515;
@@ -526,7 +525,8 @@ footer{
   margin-top: 1rem;
 }
 
-footer h2, .social-media-list i {
+footer h2,
+.social-media-list i {
   color: white;
 }
 
@@ -538,7 +538,7 @@ footer h2, .social-media-list i {
 }
 
 .social-media-list i {
-  font-size: 35px;
+  font-size: clamp(24px, 2vw, 800px);
 }
 
 .social-media-list a:hover {
