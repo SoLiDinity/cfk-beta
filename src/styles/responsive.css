@@ -127,6 +127,15 @@
   #aboutSection article{
     margin-bottom: 1rem;
   }
+
+  #aboutSection article p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  #aboutSection article ul li {
+    font-size: 14px;
+  }
 }
 
 /* Mobile screen (L, M, S) */
