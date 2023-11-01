@@ -3,7 +3,7 @@
   --main: white;
   --main-75: rgba(255, 255, 255, 0.75);
   --secondary: #1f1f1f;
-  --accent-color: blueviolet;
+  --accent-color: #18c893;
   --border-color: rgb(173, 210, 216, 0.25);
 }
 
@@ -130,10 +130,9 @@ main section {
 
 .logo {
   width: 20%;
-  min-width: 150px;
-  padding: 0.5rem 1rem;
+  min-width: 180px;
+  padding: 0.5rem;
   border-radius: 5px;
-  background-color: var(--accent-color);
 }
 
 .logo img {
@@ -172,7 +171,7 @@ main section {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, rgb(82, 29, 132), blueviolet);
+  background: linear-gradient(45deg, #00815A, #00FF94);
 }
 
 #mainSection img {
@@ -217,7 +216,7 @@ main section {
 }
 
 .learn-more-btn:hover {
-  background-color: rgb(112, 36, 184);
+  background-color: var(--accent-color);
   color: white;
 }
 
