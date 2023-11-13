@@ -1,20 +1,14 @@
 import API_ENDPOPINTS from "../global/api-endpoints";
 import OPTIONS from "../global/fetch-options";
-import Loader from "../utils/loader-performer";
 
 class DataSource {
     static async allDocuments() {
-        Loader.performLoader();
         try {
-            const response = await fetch(API_ENDPOPINTS.SHOW_ALL_DOCS, OPTIONS);
+            const response = await fetch(API_ENDPOPINTS.SHOW_ALL_DOCS, OPTIONS.method('GET'));
             const responseJson = await response.json();
 
-            Loader.finishLoader();
-
-            return await responseJson.documents;
+            return responseJson;
         } catch (error) {
-            Loader.finishLoader();
-            
             return 'gagal'
         }
     }

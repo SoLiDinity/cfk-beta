@@ -3,8 +3,6 @@ import '../styles/responsive.css';
 import DataSource from './data/data-source';
 import renderList from './render-list';
 
-const datas = await DataSource.allDocuments();
-// console.log(datas);
 const hamburgerButton = document.querySelector('#hamburger');
 const drawerNavigation = document.querySelector('#drawer');
 
@@ -24,7 +22,9 @@ drawerNavigation.addEventListener('click', (e) => {
   drawerNavigation.classList.remove('active');
 });
 
-const userData = datas;
+const userData = await DataSource.allDocuments();
+// console.log(userData);
+
 const searchInput = document.getElementById('search');
 searchInput.addEventListener('input', () => {
   userData.forEach((data) => {
